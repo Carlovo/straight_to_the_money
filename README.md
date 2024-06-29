@@ -1,2 +1,5 @@
-# straight_to_the_money
-A straightforward cookiecutter template to for Python projects
+# Straight to the Money 💰
+
+Stop wasting time in analysis paralysis over Python tooling choices 💸
+Pick the defaults 💱
+Go straight to the money 💹
