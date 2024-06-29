@@ -1,0 +1,4 @@
+{
+  "project_name": "Straight to the Money",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}"
+}
