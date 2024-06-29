@@ -1,4 +1,5 @@
 {
   "project_name": "Straight to the Money",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}"
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "python_version": "3.12"
 }
