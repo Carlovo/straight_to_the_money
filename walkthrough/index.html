@@ -126,6 +126,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#bonus-tinkering-within-context" class="nav-link">Bonus: tinkering within context</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#the-updated-happy-path-workflow" class="nav-link">The updated happy path workflow</a>
               <ul class="nav flex-column">
               </ul>
@@ -141,7 +145,7 @@
 <p>Some things in <a href="../#usage">usage</a> might require a little more effort on the first run.
 Let's go over those in more detail.</p>
 <h2 id="initializing-your-project">Initializing your project</h2>
-<p>You will probably want to manage your project with some version control system and a remote, such as git and GitHub.
+<p>You will probably want to manage your project with some version control system and a remote, such as Git and GitHub.
 Personally, I like creating the repository in the remote and then cloning to local.
 That way everything is nicely set up for me.
 Except for the template, of course.</p>
@@ -180,6 +184,13 @@ Then you can upload your work with:<br />
 <p>If that works or if you just want to skip to the real deal,
 then make an account at <a href="https://pypi.org/">PyPI</a> and
 <a href="https://docs.astral.sh/uv/guides/publish/#publishing-your-package">configure uv</a> to publish to it the proper way.</p>
+<h2 id="bonus-tinkering-within-context">Bonus: tinkering within context</h2>
+<p>My advice: run <code>uv add --dev ptpython</code>, then run <code>uv run ptpython</code> to bathe in luxury, and accept that you just pulled in couple of not strictly necessary dependencies.
+You could simply run <code>uv run python</code> and tinker away in your virtual env, but quality of life in ptpython's REPL is simply much better.</p>
+<p>Sadly, <code>uvx ptpython</code> doesn't work here.
+It makes sense, of course, because uv's whole point is env separation.
+Still, it would have been great in this particular case.
+Maybe, hopefully, I can update this part someday with an elegant hack to make it possible.</p>
 <h2 id="the-updated-happy-path-workflow">The updated happy path workflow</h2>
 <p>When you completed all the above successfully, pat yourself on the back for me.
 The real reward is of course a reliable way of developing your Python project.
