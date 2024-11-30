@@ -161,6 +161,12 @@ cd to your project directory; git add all, commit and push; and you are ready to
 <li>create the project with directory from the template with cruft, cd to it; git init, add all, commit, <a href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#creating-remote-repositories">set the remote</a> and push.</li>
 <li>create the project with directory from the template with cruft, copy the contents to a cloned repository; git add all, commit and push.</li>
 </ul>
+<h3 id="reviewing-gitignore-and-license">Reviewing .gitignore and LICENSE</h3>
+<p>Are they superfluous in a minimal project template?
+Maybe.
+I would simply always add these two directly if they weren't there already, so adding them felt like a time-saver if only for myself.
+If you had wanted another license than MIT, you have probably already chosen one and can easily override the templated one.
+Maybe take a second look at the .gitignore, maybe not, it's fine...</p>
 <h2 id="previewing-and-publishing-your-documentation">Previewing and publishing your documentation</h2>
 <p>So <code>uvx mkdocs build</code> nicely converts your documentation to a static website, now what?
 You will probably want to preview it before committing the source files, and when committed you will probably want to publish the build files somewhere on the web.</p>
