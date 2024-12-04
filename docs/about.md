@@ -34,3 +34,4 @@ I've had it with all these well-meaning 'developer advocates' forcing some tool 
 Also, by keeping the template simple, it's open to extension with your own favorite tools without carrying the bloat from my choices.
 
 Anyway, despite my defensive stance, if you truly feel like you can make this template better without sacrificing its simplicity, by all means, make a pull request!
+Also, if you want something more robust, check this project's detached fork: [Crave all the Money 🤑](https://github.com/Carlovo/straight_to_the_money).

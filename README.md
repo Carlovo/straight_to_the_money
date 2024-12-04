@@ -6,6 +6,9 @@ Stop wasting time in analysis paralysis over Python tooling choices 💸
 Pick the defaults 💱  
 Go straight to the money 💹
 
+This template focusses on simplicity.
+If you want something more robust, check this project's detached fork: [Crave all the Money 🤑](https://github.com/Carlovo/straight_to_the_money).
+
 ## Usage
 
 Prerequisite: [uv](https://docs.astral.sh/uv/)  
