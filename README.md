@@ -37,3 +37,16 @@ For a slightly more elaborate walkthrough on that, see the [docs](https://carlov
 Still skeptical?
 See the [about](https://carlovo.github.io/straight_to_the_money/about/) instead.
 Or, have a look at [my kitchen sink project](https://github.com/Carlovo/straight_to_the_kitchen_sink) created with this template.
+
+### TODO
+
+init import from as
+
+- code spell check, e.g.: VSCode Code Spell Checker
+- Generate doc string templates, e.g.: autoDocstring - Python Docstring Generator
+- VSCode markdownlint, Python, Pylance, Python Debugger?
+- linting for isort: `uvx ruff check --select I --fix`
+- linting general: `uvx ruff check` (add the tighter ruff checks)
+- mypy?
+- tool plugins (or install), like: `uvx --with mkdocstrings[python] mkdocs build`
+- Python debugging
