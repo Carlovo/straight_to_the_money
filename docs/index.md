@@ -25,6 +25,7 @@ Also look at their docs for the parts of dependency management not covered in th
 ### Workflow
 
 - Format: `uvx ruff format`
+- Lint: `uvx ruff check`
 - Test: `uv run python -m unittest`
 - Build: `uv build`
 - Document: `uvx mkdocs build`

@@ -6,8 +6,7 @@ Every software development project has almost identical needs:
 
 - version control
 - dependency management
-- linting
-- testing
+- QA (formatting, linting, testing)
 - compiling
 - documentation
 - publishing
@@ -22,12 +21,6 @@ Some fanatics will look at this template and might say something like:
 Or: "Isn't tox also super useful?"
 Well, are those extra dependencies that will only really be useful to people who already know how to add them to this template?
 Guess what, all three yes!
-
-Also, is anyone still interested in the academic differences between linting and formatting?
-No... until very weird errors start popping up and then you suddenly are...
-Are you likely to get to that point on your first 1,000 commits?
-No, and by that time, you can probably figure out how to stop that pesky formatter from undoing your intricacies.
-(If you feel like getting into the weeds early though, [have at you](https://docs.astral.sh/ruff/configuration/).)
 
 Similarly silly discussions can be had about Hatch, MkDocs or Sphinx.
 I've had it with all these well-meaning 'developer advocates' forcing some tool on you at first chance, while no-one out there seems to be able to provide you a comprehensive end-to-end developer journey.

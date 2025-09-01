@@ -19,3 +19,27 @@ classifiers = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+]
+ignore = [
+  # indentation-with-invalid-multiple
+  "E111",
+  #indentation-with-invalid-multiple-comment
+  "E114",
+  # over-indented
+  "E117",
+]

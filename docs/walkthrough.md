@@ -31,6 +31,17 @@ I would simply always add these two directly if they weren't there already, so a
 If you had wanted another license than MIT, you have probably already chosen one and can easily override the templated one (if you do, do it in the `pyproject.toml` as well).
 Maybe take a second look at the .gitignore, maybe not, it's fine...
 
+## Quality assurance (formatting, linting and testing)
+
+Staying in line with the minimalistic theme, I kept the configuration of the tools that I advice for doing QA minimal.
+I tinkered only a bit with the linting (`uv ruff check`), mainly because I love isort.
+You can see the config in the `pyproject.toml`.
+
+You can get into the weeds very fast with linting though and if you go with the flow it's probably not going to bother you in your first 1,000 commits or so.
+And by that time you can probably figure out how to stop a pesky formatter from undoing your intricacies,
+so my advice would be to not give it too much thought.
+(If you feel like getting into the weeds early though, [have at you](https://docs.astral.sh/ruff/configuration/).)
+
 ## Previewing and publishing your documentation
 
 So `uvx mkdocs build` nicely converts your documentation to a static website, now what?
@@ -79,6 +90,7 @@ The real reward is of course a reliable way of developing your Python project.
 Considering the publishing and all, you may want to alter the workflow in this project's introduction to something like:
 
 - Format: `uvx ruff format`
+- Lint: `uvx ruff check` (or simply `uvx ruff check --fix` if, you also, like to live dangerously)
 - Test: `uv run python -m unittest`
 - Build: `uv build`
 - Preview documentation: `uvx mkdocs serve`
