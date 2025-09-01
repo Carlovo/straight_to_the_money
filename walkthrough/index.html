@@ -118,6 +118,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#quality-assurance-formatting-linting-and-testing" class="nav-link">Quality assurance (formatting, linting and testing)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#previewing-and-publishing-your-documentation" class="nav-link">Previewing and publishing your documentation</a>
               <ul class="nav flex-column">
               </ul>
@@ -167,6 +171,14 @@ Maybe.
 I would simply always add these two directly if they weren't there already, so adding them felt like a time-saver if only for myself.
 If you had wanted another license than MIT, you have probably already chosen one and can easily override the templated one (if you do, do it in the <code>pyproject.toml</code> as well).
 Maybe take a second look at the .gitignore, maybe not, it's fine...</p>
+<h2 id="quality-assurance-formatting-linting-and-testing">Quality assurance (formatting, linting and testing)</h2>
+<p>Staying in line with the minimalistic theme, I kept the configuration of the tools that I advice for doing QA minimal.
+I tinkered only a bit with the linting (<code>uv ruff check</code>), mainly because I love isort.
+You can see the config in the <code>pyproject.toml</code>.</p>
+<p>You can get into the weeds very fast with linting though and if you go with the flow it's probably not going to bother you in your first 1,000 commits or so.
+And by that time you can probably figure out how to stop a pesky formatter from undoing your intricacies,
+so my advice would be to not give it too much thought.
+(If you feel like getting into the weeds early though, <a href="https://docs.astral.sh/ruff/configuration/">have at you</a>.)</p>
 <h2 id="previewing-and-publishing-your-documentation">Previewing and publishing your documentation</h2>
 <p>So <code>uvx mkdocs build</code> nicely converts your documentation to a static website, now what?
 You will probably want to preview it before committing the source files, and when committed you will probably want to publish the build files somewhere on the web.</p>
@@ -203,6 +215,7 @@ The real reward is of course a reliable way of developing your Python project.
 Considering the publishing and all, you may want to alter the workflow in this project's introduction to something like:</p>
 <ul>
 <li>Format: <code>uvx ruff format</code></li>
+<li>Lint: <code>uvx ruff check</code> (or simply <code>uvx ruff check --fix</code> if, you also, like to live dangerously)</li>
 <li>Test: <code>uv run python -m unittest</code></li>
 <li>Build: <code>uv build</code></li>
 <li>Preview documentation: <code>uvx mkdocs serve</code></li>
