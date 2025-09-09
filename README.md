@@ -7,14 +7,13 @@ Pick the defaults 💱
 Go straight to the money 💹
 
 This template focusses on simplicity.
-If you want something more robust, check this project's detached fork: [Crave all the Money 🤑](https://github.com/Carlovo/straight_to_the_money).
+If you want something more robust, check this project's detached fork: [Paleofuturistic Python](https://github.com/schubergphilis/paleofuturistic_python).
 
 ## Usage
 
 Prerequisite: [uv](https://docs.astral.sh/uv/)  
 (Installing uv should also provide you with uvx.
-Give their docs a look-over before continuing if you want to get a better understanding of what is going on under the hood in the steps below.
-Also look at their docs for the parts of dependency management not covered in this template's standard flow, such as removing dependencies from your project.)
+Give their docs a look-over before continuing if you want to get a better understanding of what is going on under the hood in the steps below.)
 
 ### Setup
 
