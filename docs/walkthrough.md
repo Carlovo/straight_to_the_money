@@ -97,13 +97,9 @@ then make an account at [PyPI](https://pypi.org/) and
 
 ## Bonus: tinkering within context
 
-My advice: run `uv add --dev ptpython`, then run `uv run ptpython` to bathe in luxury, and accept that you just pulled in couple of not strictly necessary dependencies.
 You could simply run `uv run python` and tinker away in your virtual env, but quality of life in ptpython's REPL is simply much better.
-
-Sadly, `uvx ptpython` doesn't work here.
-It makes sense, of course, because uv's whole point is env separation.
-Still, it would have been great in this particular case.
-Maybe, hopefully, I can update this part someday with an elegant hack to make it possible.
+Directly running `uvx ptpython` doesn't work here, because uv's whole point is env separation.
+To give your current project's context to ptpython you can run `uvx --with . ptpython`.
 
 ## The updated happy path workflow
 
@@ -112,10 +108,11 @@ The real reward is of course a reliable way of developing your Python project.
 Considering the publishing and all, you may want to alter the workflow in this project's introduction to something like:
 
 - Download dependencies (if you need any): `uv add some_lib_you_need`
-- Develop your feature
-- Format: `uvx ruff format`
-- Lint: `uvx ruff check` (or simply `uvx ruff check --fix` if, you also, like to live dangerously)
-- Test: `uv run python -m unittest`
+- Develop (optional, tinker: `uvx --with . ptpython`)
+- QA:
+    - Format: `uvx ruff format`
+    - Lint: `uvx ruff check` (or simply `uvx ruff check --fix` if, you also, like to live dangerously)
+    - Test: `uv run python -m unittest`
 - Build: `uv build`
 - Preview documentation: `uvx mkdocs serve`
 - Publish package: `uv publish`

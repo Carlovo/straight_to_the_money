@@ -23,9 +23,11 @@ Give their docs a look-over before continuing if you want to get a better unders
 
 ### Workflow
 
-- Format: `uvx ruff format`
-- Lint: `uvx ruff check`
-- Test: `uv run python -m unittest`
+- Develop (optional, tinker: `uvx --with . ptpython`)
+- QA:
+    - Format: `uvx ruff format`
+    - Lint: `uvx ruff check`
+    - Test: `uv run python -m unittest`
 - Build: `uv build`
 - Document: `uvx mkdocs build`
 - Publish: `uv publish`
