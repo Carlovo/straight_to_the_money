@@ -6,7 +6,7 @@ Every software development project has almost identical needs:
 
 - version control
 - dependency management
-- QA (formatting, linting, testing)
+- QA (formatting, testing etc.)
 - compiling
 - documentation
 - publishing

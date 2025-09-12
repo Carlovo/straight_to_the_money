@@ -44,3 +44,8 @@ ignore = [
   # over-indented
   "E117",
 ]
+
+[tool.mypy]
+files = [
+    "src"
+]

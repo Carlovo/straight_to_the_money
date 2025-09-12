@@ -40,10 +40,11 @@ Yes, that includes caching and project-based isolation.
 For starters just adding some dependencies from PyPI is probably all you want.
 All the other things you would want from (uv's) dependency management you can always look into later.
 
-## Quality assurance (formatting, linting and testing)
+## Quality assurance (formatting, linting, type checking and testing)
 
 Staying in line with the minimalistic theme, I kept the configuration of the tools that I advice for doing QA minimal.
 I tinkered only a bit with the linting (`uvx ruff check`), mainly because I love isort.
+Also, I added the right search path for linting (`uvx mypy`) for convenience.
 You can see the config in the `pyproject.toml`.
 
 Formatting (`uvx ruff format`) and testing (`uv run python -m unittest`) should speak for themselves.
@@ -112,6 +113,7 @@ Considering the publishing and all, you may want to alter the workflow in this p
 - QA:
     - Format: `uvx ruff format`
     - Lint: `uvx ruff check` (or simply `uvx ruff check --fix` if, you also, like to live dangerously)
+    - Type check: `uvx mypy`
     - Test: `uv run python -m unittest`
 - Build: `uv build`
 - Preview documentation: `uvx mkdocs serve`

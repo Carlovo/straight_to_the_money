@@ -27,6 +27,7 @@ Give their docs a look-over before continuing if you want to get a better unders
 - QA:
     - Format: `uvx ruff format`
     - Lint: `uvx ruff check`
+    - Type check: `uvx mypy`
     - Test: `uv run python -m unittest`
 - Build: `uv build`
 - Document: `uvx mkdocs build`
