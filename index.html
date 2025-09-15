@@ -146,9 +146,14 @@ Give their docs a look-over before continuing if you want to get a better unders
 </ul>
 <h3 id="workflow">Workflow</h3>
 <ul>
+<li>Develop (optional, tinker: <code>uvx --refresh --with . ptpython</code>)</li>
+<li>QA:<ul>
 <li>Format: <code>uvx ruff format</code></li>
 <li>Lint: <code>uvx ruff check</code></li>
+<li>Type check: <code>uvx mypy</code></li>
 <li>Test: <code>uv run python -m unittest</code></li>
+</ul>
+</li>
 <li>Build: <code>uv build</code></li>
 <li>Document: <code>uvx mkdocs build</code></li>
 <li>Publish: <code>uv publish</code></li>
@@ -241,5 +246,5 @@ Or, have a look at <a href="https://github.com/Carlovo/straight_to_the_kitchen_s
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-09-09 18:24:39.889350+00:00
+Build Date UTC : 2025-09-15 18:14:06.282789+00:00
 -->
